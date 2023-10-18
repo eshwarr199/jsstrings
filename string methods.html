@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var a="character";
+
+        console.log(a);
+        console.log(a[1]);
+        console.log(a[8]);
+        console.log(a.length);
+        console.log(a.length-1);
+        console.log(a.length-2);
+         console.log(a.charAt(1));
+         console.log(a.charAt("4")=="c");
+         console.log(a.charAt(0)); //starting number
+         console.log(a.charCodeAt(5)); //ascii value
+        
+         var b="  t esh    war   ";
+         console.log(b);
+         console.log(b.trim());
+         console.log(b.trimStart());
+         console.log(b.trimEnd());
+         console.log(b.trimLeft());
+         console.log(b.trimRight());
+
+         console.log("t".concat(" eshwar"));
+
+         var c="error";
+         console.log(c.replace("r","t"));
+         console.log(c.replaceAll("r","t"));// /l/ig," " -regular expressions, g-global,i-case intensive
+         console.log(c.replace(/r/ig,"n"));
+         var d="2";
+         console.log(d.padStart(5,1));
+         console.log(d.padEnd(3,0));
+         console.log(d.padStart(5,"t"));
+         console.log("t".padStart(3,"e"));
+         console.log("eshwar".padStart(7,"t"));
+         var e="character";
+         console.log(e.split("a"));
+         console.log(e.split("/"));
+         var f="train reached the station";
+         console.log(f.split("the"));
+         var g="eshwar";
+         console.log(g.slice(2,5));
+         console.log(g.slice(1,5));
+         console.log(g.slice(0,6));
+         console.log(g.slice(-3,-2)); //length=-3 from end and index=-2
+         console.log(g.slice(-5,-2,));
+         console.log(g.slice(-4));
+         console.log(g.substring(0,4));
+         console.log(g.substr(1,4));
+         console.log(g.indexOf("h"));
+         console.log(g.lastIndexOf("r"));
+         console.log(g.search("h"));
+         console.log(g.search(/w/i));
+         var h="array";
+         console.log(h.match("r"));
+         console.log(h.match(/a/g));
+         console.log(Array.from(a.matchAll("a")));
+         console.log(h.includes("a"));
+         console.log(h.includes("e"));
+         console.log(h.startsWith("r",2));
+         console.log(h.endsWith("y"));
+         var i="NumBErS";
+         console.log(i.toUpperCase());
+         console.log(i.toLowerCase());
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1 id="id">Task-6</h1>
+         Take a prompt and give mail id ,if it contains "@gmail.com" print it is valid mail otherwise print invalid mail id.</center>
+        <script>
+       var a=prompt("enter gmail address");
+       //if(a.endsWith("@gmail.com")){  //by using endswith string ;
+        if(a.slice(-10)=="@gmail.com"){
+        console.log("valid mail");
+       }
+       else{
+        console.log("it is not a valid mail");
+       }
+       </script>
+</body>
+</html>

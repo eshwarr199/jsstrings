@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1 id="id">Task-1</h1>
+        Take a number from prompt.check whether that number is an indian number or not?</center>
+        <script>
+            id.style.color="red";
+            
+            // var a=prompt("enter 10 digit mobile number");
+            // if(a.charAt("0")==9 || a.charAt("0")==8 || a.charAt("0")==7 || a.charAt("0")==6 && a.length==10){
+            //     console.log("it is an indian number");
+            // }else{
+            //     console.log("it is not an indian number");
+            // }
+
+            var a=prompt("enter mobile number");
+           
+        
+            if(a.startsWith("9") || a.startsWith("8") || a.startsWith("7") || a.startsWith("6") && (a.length=10)){
+                console.log("it is an indian number");
+            }
+            else{
+                console.log("it is not an indian number");
+            }
+
+        </script>
+</body>
+</html>
